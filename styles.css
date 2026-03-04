@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 body{
@@ -27,11 +28,27 @@ body{
 
 .semloginContainer{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(-140deg, rgba(76, 71, 222, 1) 55%, rgba(245, 245, 245, 1));
     width: 22.5vw;
     height: 35vh;
     border-radius: 34px;
     right: 27.5vw;
+}
+
+.semloginContainer h1{
+    color: #fff;
+    text-align: end;
+    font-size: 3.5vw;
+    width: 16.4vw;
+    margin-right: 2%;
+}
+
+.newButton{
+   
 }
 
 @keyframes loginTransition {
@@ -58,6 +75,18 @@ body{
 
 }
 
+@keyframes fadeIn {
+
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
 .open{
     animation: loginTransition 1s ease-in-out;
     right: 50vw;
@@ -66,4 +95,9 @@ body{
 .close{
     animation: loginTransition2 1s ease-in-out;
     right: 27.5vw;
+}
+
+.fadeIn{
+    animation: fadeIn 2s ease-in-out;
+    opacity: 100%;
 }
